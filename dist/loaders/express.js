@@ -11,12 +11,17 @@ const swagger_1 = __importDefault(require("./swagger"));
 const errorHandler_1 = require("../common/middlewares/errorHandler");
 const authRoutes_1 = __importDefault(require("../modules/auth/routes/authRoutes"));
 const userRoutes_1 = __importDefault(require("../modules/user/routes/userRoutes"));
+const logger_1 = __importDefault(require("../common/utils/logger"));
+const express_list_endpoints_1 = __importDefault(require("express-list-endpoints"));
 exports.default = ({ app }) => {
     app.get('/status', (req, res) => {
         res.status(200).end();
     });
     app.head('/status', (req, res) => {
         res.status(200).end();
+    });
+    app.get('/', (req, res) => {
+        res.status(200).send('Hello World');
     });
     app.enable('trust proxy');
     app.use((0, cors_1.default)());
@@ -32,4 +37,10 @@ exports.default = ({ app }) => {
         next(err);
     });
     app.use(errorHandler_1.errorHandler);
+    // Listar e logar todos os endpoints disponíveis
+    const endpoints = (0, express_list_endpoints_1.default)(app);
+    logger_1.default.info('📋 Lista de Endpoints Disponíveis:');
+    endpoints.forEach((endpoint) => {
+        logger_1.default.info(`${endpoint.methods.join(', ')} ${endpoint.path}`);
+    });
 };

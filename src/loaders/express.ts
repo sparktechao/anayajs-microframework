@@ -6,6 +6,9 @@ import setupSwagger from './swagger';
 import { errorHandler } from '../common/middlewares/errorHandler';
 import authRoutes from '../modules/auth/routes/authRoutes';
 import userRoutes from '../modules/user/routes/userRoutes';
+import logger from '../common/utils/logger';
+import listEndpoints from 'express-list-endpoints';
+
 
 export default ({ app }: { app: Express }) => {
   app.get('/status', (req, res) => {
@@ -38,4 +41,11 @@ export default ({ app }: { app: Express }) => {
   });
 
   app.use(errorHandler);
+
+   // Listar e logar todos os endpoints disponíveis
+   const endpoints = listEndpoints(app);
+   logger.info('📋 Lista de Endpoints Disponíveis:');
+   endpoints.forEach((endpoint: { methods: any[]; path: any; }) => {
+     logger.info(`${endpoint.methods.join(', ')} ${endpoint.path}`);
+   });
 };

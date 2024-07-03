@@ -39,3 +39,42 @@
       🛡️  Server listening on port: 3005 🛡️
       ################################################
     
+2024-07-03T17:25:46.042Z [[32minfo[39m]: ✌️ DB loaded and connected!
+2024-07-03T17:25:46.044Z [[32minfo[39m]: ✌️ Dependency Injector loaded
+2024-07-03T17:25:46.049Z [[32minfo[39m]: ✌️ Express loaded
+2024-07-03T17:25:46.050Z [[32minfo[39m]: 
+      ################################################
+      🛡️  Server listening on port: 3005 🛡️
+      ################################################
+    
+2024-07-03T17:26:11.330Z [[32minfo[39m]: ✌️ DB loaded and connected!
+2024-07-03T17:26:11.331Z [[32minfo[39m]: ✌️ Dependency Injector loaded
+2024-07-03T17:26:11.334Z [[32minfo[39m]: ✌️ Express loaded
+2024-07-03T17:26:11.336Z [[32minfo[39m]: 
+      ################################################
+      🛡️  Server listening on port: 3005 🛡️
+      ################################################
+    
+2024-07-03T17:26:24.735Z [[32minfo[39m]: ✌️ DB loaded and connected!
+2024-07-03T17:26:24.737Z [[32minfo[39m]: ✌️ Dependency Injector loaded
+2024-07-03T17:26:24.739Z [[32minfo[39m]: ✌️ Express loaded
+2024-07-03T17:26:24.741Z [[32minfo[39m]: 
+      ################################################
+      🛡️  Server listening on port: 3005 🛡️
+      ################################################
+    
+2024-07-03T17:30:15.913Z [[32minfo[39m]: ✌️ DB loaded and connected!
+2024-07-03T17:30:15.914Z [[32minfo[39m]: ✌️ Dependency Injector loaded
+2024-07-03T17:30:15.917Z [[32minfo[39m]: 📋 Lista de Endpoints Disponíveis:
+2024-07-03T17:30:15.917Z [[32minfo[39m]: GET, HEAD /status
+2024-07-03T17:30:15.917Z [[32minfo[39m]: GET /
+2024-07-03T17:30:15.918Z [[32minfo[39m]: POST /api/auth/register
+2024-07-03T17:30:15.918Z [[32minfo[39m]: GET /api/auth/:id
+2024-07-03T17:30:15.918Z [[32minfo[39m]: POST /api/users/register
+2024-07-03T17:30:15.918Z [[32minfo[39m]: GET /api/users/:id
+2024-07-03T17:30:15.918Z [[32minfo[39m]: ✌️ Express loaded
+2024-07-03T17:30:15.920Z [[32minfo[39m]: 
+      ################################################
+      🛡️  Server listening on port: 4000 🛡️
+      ################################################
+    
