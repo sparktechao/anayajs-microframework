@@ -274,6 +274,3 @@ Este projeto está licenciado sob a Licença MIT.
 Siga essas instruções para configurar, executar e desenvolver com o AnayaJS. Para mais informações, consulte a documentação ou entre em contato com o autor.
 ```
 
-### Conclusão
-
-Este `README.md` fornece uma visão geral completa do seu micro-framework, incluindo instruções de instalação, configuração, uso da CLI, execução de testes e acesso à documentação da API. Certifique-se de ajustar qualquer detalhe específico conforme necessário para seu projeto.
